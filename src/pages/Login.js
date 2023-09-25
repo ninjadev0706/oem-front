@@ -22,7 +22,7 @@ const Login = () => {
                     <div className="login-subtitle">Log into your admin account</div>
                     <input type="text" className="login-input input-name" placeholder="User"></input>
                     <input type="password" className="login-input input-pass" placeholder="Password"></input>
-                    <button className="login-btn" onClick={() => history.push(`/selectwallet/`)}>Log in</button>
+                    <button className="login-btn" onClick={() => history.push(`/selectwallet`)}>Log in</button>
                 </div>
             </div>
         </div>
