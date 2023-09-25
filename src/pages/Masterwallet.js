@@ -94,13 +94,13 @@ const Masterwallet = () => {
                                     <div className="error-area"></div>
                                     <div className="button-area flex justify-between">
                                         <button className="back-btn cursor-pointer"
-                                            onClick={() => history.push(`/selectwallet/`)}
+                                            onClick={() => history.push(`/selectwallet`)}
                                         >
                                             Back
                                         </button>
                                         <button
                                             className="continue-btn"
-                                            onClick={() => history.push(`/smartcontract/`)}
+                                            onClick={() => history.push(`/smartcontract`)}
                                         >
                                             Continue
                                         </button>

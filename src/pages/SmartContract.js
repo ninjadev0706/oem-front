@@ -114,13 +114,13 @@ const SmartContract = () => {
                                     <div className="button-area flex justify-between">
                                         <button
                                             className="back-btn cursor-pointer"
-                                            onClick={() => history.push(`/masterwallet/`)}
+                                            onClick={() => history.push(`/masterwallet`)}
                                         >
                                             Back
                                         </button>
                                         <button
                                             className={`cursor-pointer ${selectedSC === 0 ? 'proceed-btn' : 'proceed-active-btn'}`}
-                                            onClick={() => history.push(`/projectcost/`)}
+                                            onClick={() => history.push(`/projectcost`)}
                                         >
                                             Proceed
                                         </button>

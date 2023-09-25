@@ -97,7 +97,7 @@ const selectwallet = () => {
                     </div>
                     <button
                         className={`selectwallet-btn ${selectedwallet == undefined ? 'disabled' : ''}`}
-                        onClick={() => history.push(`/masterwallet/`)}
+                        onClick={() => history.push(`/masterwallet`)}
                     >
                         Continue
                     </button>
