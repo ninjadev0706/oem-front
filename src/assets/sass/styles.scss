@@ -1,0 +1,291 @@
+.content-body {
+    display: flex;
+    justify-content: center;
+}
+div, input {
+    box-sizing: border-box;
+}
+.login-content {
+    -webkit-margin-before: 262px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .login-title {
+        color: #000;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .login-subtitle {
+        -webkit-margin-before: 12px;
+        -webkit-margin-after: 33px;
+        color: #000;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .login-input {
+        display: flex;
+        width: 629px;
+        height: 60px;
+        padding: 12px 49px;
+        align-items: flex-start;
+        -webkit-margin-after: 33px;
+        border: 1px solid grey;
+    }
+    .login-btn {
+        display: flex;
+        width: 629px;
+        padding: 12px 49px;
+        height: 72px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #573CFA 54.17%, #372794 100%);
+        color: #FDFDFD;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: none
+    }
+}
+.content-area {
+    -webkit-margin-before: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .selectwallet-content {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px;
+        border: 1px solid #000;
+        .selectwallet-title {
+            color: #000;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .selectwallet-subtitle {
+            -webkit-margin-before: 21px;
+            -webkit-margin-after: 44px;
+            color: #000;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .wallet-list {
+            display: flex;
+            flex-direction: column;
+            width: 676px;
+            .wallet-list-item {
+                display: flex;
+                flex-direction: row;
+                width: 676px;
+                padding: 12px 49px;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid #A2A2A2;
+                .wallet-category {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .wallet-icon {
+                        -webkit-margin-end: 12px;
+                    }
+                    .wallet-name {
+                        color: #000;
+                        font-family: Inter;
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    .detected-text {
+                        color: #000;
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            .wallet-list-item.active {
+                border-color: #573CFA;
+            }
+        }
+    }
+    .selectwallet-btn {
+        -webkit-margin-before: 32px;
+        display: flex;
+        width: 319px;
+        height: 72px;
+        padding: 12px 49px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: linear-gradient(90deg, #573CFA 54.17%, #372794 100%);
+        color: white;
+        border: none;
+    }
+    .selectwallet-btn.disabled {
+        background: #D9D9D9;
+        color: white;
+        border: none;
+    }
+}
+.sidebar-container {
+    display: flex;
+    flex-direction: row;
+    height: 1080px;
+    background: #F2F2F2;
+    .sidebar {
+        width: 439px;
+        height: 100%;
+        .sidebar-header-container {
+            height: 87px;
+            background-color: #D9D9D9;
+            padding: 11px 28px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            .header-logo {
+                width: 65px;
+                height: 65px; 
+            }
+            .header-title {
+                color: #000;
+                text-align: center;
+                font-family: Inter;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-left: 30px;
+            }
+        }
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-shrink: 0;
+            .menu-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-shrink: 0;
+                .menu-list-item {
+                    -webkit-margin-after: 30px;
+                    width: 439px;
+                    display: flex;
+                    padding: 21px 45px;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-top: 1px solid #9C9C9C;
+                    border-bottom: 1px solid #9C9C9C;
+                    .item-area {
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+                        .item-index {
+                            color: #573CFA;
+                            font-family: Inter;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: normal;
+                        }
+                        .item-name {
+                            color: #573CFA;
+                            font-family: Inter;
+                            font-size: 30px;
+                            font-style: normal;
+                            font-weight: 800;
+                            line-height: normal;
+                        }
+                    }
+                    .item-icon-area {
+                        display: flex;
+                        width: 53px;
+                        height: 53px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        flex-shrink: 0;
+                    }
+                }
+                .menu-list-item.active {
+                    border: 1px solid #FFF;
+                    background: linear-gradient(90deg, #372794 0.95%, #573CFA 99.97%);
+                    .item-index {
+                        color: #FFF;
+                    }
+                    .item-name {
+                        color: #FFF;
+                    }
+                }
+                .menu-list-item.selected {
+                    border-top: 1px solid #A2A2A2;
+                    border-bottom: 1px solid #A2A2A2;
+                    background: #FFF;
+                    .item-index {
+                        color: #A2A2A2;
+                    }
+                    .item-name {
+                        color: #A2A2A2;
+                    }
+                }
+            }
+        }
+    }
+    .main-content {
+        width: 1481px;
+        .main-header {
+            display: flex;
+            height: 70px;
+            padding: 0px 35px;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+            background: linear-gradient(90deg, #573CFA 53.89%, #221474 99.99%);
+            .header-title {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .change-wallet-btn {
+                display: flex;
+                padding: 10px 27px;
+                align-items: flex-start;
+                border: 1px solid #A2A2A2;
+                background: #FFF;
+                color: #000;
+                font-family: Inter;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
