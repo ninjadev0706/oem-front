@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { hydrate, render } from "react-dom";
 
 import { Provider as ReduxProvider } from "react-redux";
 import "./assets/sass/index.scss";
@@ -12,9 +13,13 @@ import App from "./App";
 
 const store = configureStore();
 
-ReactDOM.render(
-    <ReduxProvider store={store}>
+const rootElement = document.getElementById("app-root");
+if (rootElement.hasChildNodes()) {
+    hydrate(<ReduxProvider store={store}>
         <App />
-    </ReduxProvider>,
-    document.getElementById("app-root")
-);
+    </ReduxProvider>, rootElement);
+} else {
+    render(<ReduxProvider store={store}>
+        <App />
+    </ReduxProvider>, rootElement);
+}
